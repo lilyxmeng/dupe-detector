@@ -1,3 +1,4 @@
+# most of this is not needed to run this repo
 aiohttp==3.7.4
 appdirs==1.4.4
 appnope==0.1.2
