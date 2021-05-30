@@ -1,1 +1,1 @@
-# dupe-detector
+# DupeDetector
