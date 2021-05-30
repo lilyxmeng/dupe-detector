@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>DupeDetector</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="slideshow">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <h1 class="title">Enter Your News Article Below</h1>
+                    <hr class="line">
+                    <form method="POST" action="/text" class="form">
+                        <textarea type="text" name="news" placeholder="Type here" class="news-input"></textarea>
+                        <button type="submit" class="check-btn">Check</button>
+                    </form>
+                </div>
+                <div class="mySlides fade">
+                    <h1 class="title">Upload Your News Article Below</h1>
+                    <hr class="line">
+                    <form method="POST" action="/img" class="form" enctype="multipart/form-data">
+                        <div class="news-input upload">
+                            <h2>.png, .jpeg, and .jpg files only ヾ(・ω・*)</h2>
+                            <input type="file" name="file" class="file-input" accept=".png,.jpeg,.jpg">
+                        </div>
+                        <button type="submit" class="check-btn">Check</button>
+                    </form>
+                </div>
+            </div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

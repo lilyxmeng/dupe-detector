@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.content {
+  width: 80%;
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 7vh;
+  background-image: linear-gradient(120deg, #e0c3fc, #8ec5fc);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.check-btn {
+  background-image: linear-gradient(
+    to right,
+    #1d2b64 0%,
+    #f8cdda 51%,
+    #1d2b64 100%
+  );
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+  width: 63vw;
+  padding: 15px 0;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+}
+
+.check-btn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}

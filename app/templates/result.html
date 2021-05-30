@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <title>DupeDetector</title>
+</head>
+
+<body>
+    <div class="content">
+        {% if result == "Invalid article" %}
+        <div class="result-container">
+            <h1 class="result">(＃`Д´) {{ result }}!</h1>
+        </div>
+        {% else %}
+        <div class="result-container">
+            <h1 class="result">{{ result }}</h1>
+        </div>
+        {% endif %}
+        <button class="view-article" id="viewArticle">View The Article</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="news-container">
+                    <p class="news">{{ news }}</p>
+                </div>
+            </div>
+        </div>
+        <button class="check-btn"><a href="/">Check Another Article</a></button>
+    </div>
+    <script src="{{ url_for('static', filename='js/result.js') }}"></script>
+</body>
+
+</html>
