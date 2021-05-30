@@ -41,7 +41,7 @@ itemloaders==1.0.4
 itsdangerous==1.1.0
 jedi==0.18.0
 jellyfish==0.8.2
-Jinja2==2.11.2
+Jinja2==3.0.1
 jmespath==0.10.0
 joblib==1.0.1
 jsonschema==3.2.0
@@ -51,7 +51,7 @@ jupyterlab-pygments==0.1.2
 kiwisolver==1.3.1
 lib50==2.0.9
 lxml==4.6.3
-MarkupSafe==1.1.1
+MarkupSafe==2.0.1
 matplotlib==3.4.0
 matplotlib-inline==0.1.2
 mistune==0.8.4
